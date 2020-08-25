@@ -5,7 +5,7 @@ import Greet from './greet';
 function App() {
   return (
     <div className="App">
-      <Greet></Greet>
+      <Greet />
     </div>
   );
 }

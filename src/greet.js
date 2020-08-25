@@ -17,7 +17,13 @@ class Greet extends React.Component {
   }
 
   render() {
-    let nameBox = <input placeholder="Name" onKeyUp={this.updateName}></input>;
+    let nameBox = (
+      <input
+        placeholder="Name"
+        value={this.state.name}
+        onChange={this.updateName}
+      ></input>
+    );
     let buttonText = 'Say hello';
 
     if (this.state.isSubmit) {
